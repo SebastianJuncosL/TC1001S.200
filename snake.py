@@ -27,7 +27,8 @@ def change(x, y):
 
 def inside(head):
     "Return True if head inside boundaries."
-    return -200 < head.x < 190 and -200 < head.y < 190
+    # Expandede boundaries by 1
+    return -201 < head.x < 19`1 and -201 < head.y < 191
 
 
 def move():
@@ -58,7 +59,8 @@ def move():
 
     square(food.x, food.y, 9, 'green')
     update()
-    ontimer(move, 100)
+    # Increased snake speed Sebastian
+    ontimer(move, 200)
 
 
 setup(420, 420, 370, 0)
