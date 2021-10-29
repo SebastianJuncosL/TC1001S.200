@@ -24,8 +24,8 @@ def tap(x, y):
     if not inside(ball):
         ball.x = -199
         ball.y = -199
-        speed.x = (x + 200) / 25
-        speed.y = (y + 200) / 25
+        speed.x = (x + 210) / 25
+        speed.y = (y + 210) / 25
 
 
 def inside(xy):
@@ -39,11 +39,11 @@ def draw():
 
     for target in targets:
         goto(target.x, target.y)
-        dot(20, 'blue')
+        dot(20, 'yellow')
 
     if inside(ball):
         goto(ball.x, ball.y)
-        dot(6, 'red')
+        dot(6, 'green')
 
     update()
 

@@ -52,9 +52,9 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, 'green')
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, 'brown')
     update()
     ontimer(move, 100)
 
@@ -63,9 +63,9 @@ setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
 listen()
-onkey(lambda: change(10, 0), 'Right')
-onkey(lambda: change(-10, 0), 'Left')
-onkey(lambda: change(0, 10), 'Up')
-onkey(lambda: change(0, -10), 'Down')
+onkey(lambda: change(10, 0), 'D')
+onkey(lambda: change(-10, 0), 'A')
+onkey(lambda: change(0, 10), 'W')
+onkey(lambda: change(0, -10), 'S')
 move()
 done()
