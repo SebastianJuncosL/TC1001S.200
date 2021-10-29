@@ -44,7 +44,7 @@ def move():
     snake.append(head)
 
     if head == food:
-        
+       #Solo muestra puntajes de 5 en 5 JOE 
         if len(snake)%5==00:
            print('Snake:', len(snake))
         food.x = randrange(-15, 15) * 10
@@ -55,6 +55,7 @@ def move():
     clear()
 
     for body in snake:
+       #Cambio de color JOE (hubo conflict)
         square(body.x, body.y, 9, 'black')
 
     square(food.x, food.y, 9, 'green')
