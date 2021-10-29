@@ -59,7 +59,8 @@ def move():
         target.x -= 2.5
 
     if inside(ball):
-        speed.y -= 0.35
+    #aumentar gravedad
+        speed.y -= 0.5
         ball.move(speed)
 
     dupe = targets.copy()
@@ -84,4 +85,4 @@ up()
 tracer(False)
 onscreenclick(tap)
 move()
-done()
+p_JyglnDSgMxZkp4UW8E2c5XmiG54OMz2P4WmSone()
