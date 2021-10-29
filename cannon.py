@@ -38,7 +38,8 @@ def draw():
 
     for target in targets:
         goto(target.x, target.y)
-        dot(20, 'black')
+        #Targets negros JOE
+	dot(20, 'black')
 
     if inside(ball):
         goto(ball.x, ball.y)
@@ -59,7 +60,7 @@ def move():
         target.x -= 2.5
 
     if inside(ball):
-    #aumentar gravedad
+    #aumentar gravedad JOE (antes estaba en 0.35)
         speed.y -= 0.5
         ball.move(speed)
 
