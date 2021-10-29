@@ -38,7 +38,7 @@ def draw():
 
     for target in targets:
         goto(target.x, target.y)
-        dot(20, 'blue')
+        dot(20, 'black')
 
     if inside(ball):
         goto(ball.x, ball.y)
@@ -85,4 +85,4 @@ up()
 tracer(False)
 onscreenclick(tap)
 move()
-p_JyglnDSgMxZkp4UW8E2c5XmiG54OMz2P4WmSone()
+done()
