@@ -27,7 +27,7 @@ def change(x, y):
 
 def inside(head):
     "Return True if head inside boundaries."
-    # Expandede boundaries by 1
+    # Expanded boundaries by 1
     return -201 < head.x < 19`1 and -201 < head.y < 191
 
 
