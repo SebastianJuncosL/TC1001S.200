@@ -24,9 +24,14 @@ def tap(x, y):
     if not inside(ball):
         ball.x = -199
         ball.y = -199
+<<<<<<< HEAD
         speed.x = (x + 210) / 25
         speed.y = (y + 210) / 25
 
+=======
+        speed.x = (x + 200) / 10
+        speed.y = (y + 200) / 10
+>>>>>>> 0844657d37e7405e7f3a319b259e10819da9e4f6
 
 def inside(xy):
     "Return True if xy within screen."
@@ -39,7 +44,12 @@ def draw():
 
     for target in targets:
         goto(target.x, target.y)
+<<<<<<< HEAD
         dot(20, 'yellow')
+=======
+        #Targets negros JOE
+	dot(20, 'black')
+>>>>>>> 0844657d37e7405e7f3a319b259e10819da9e4f6
 
     if inside(ball):
         goto(ball.x, ball.y)
@@ -56,10 +66,12 @@ def move():
         targets.append(target)
 
     for target in targets:
-        target.x -= 0.5
+        # increased moving target speed Sebastian 
+        target.x -= 2.5
 
     if inside(ball):
-        speed.y -= 0.35
+    #aumentar gravedad JOE (antes estaba en 0.35)
+        speed.y -= 0.5
         ball.move(speed)
 
     dupe = targets.copy()
@@ -74,8 +86,8 @@ def move():
     for target in targets:
         if not inside(target):
             return
-
-    ontimer(move, 50)
+    # increased ball speed Sebastian 
+    ontimer(move, 100)
 
 
 setup(420, 420, 370, 0)
